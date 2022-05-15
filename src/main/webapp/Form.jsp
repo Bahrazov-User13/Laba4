@@ -1,18 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Calculator</title>
+<meta charset="UTF-8">
+<title>Калькулятор-Площадь круга</title>
 </head>
 <body>
-        <h1>Площадь круга</h1>
-
-        <form class="calc" action="${pageContext.request.contextPath}/JavaCalc" method="post">
-              <label for="radius">Радиус:</label>
-              <input type="text" class="form-control form-control-lg" name="radius" id="radius" placeholder="Введите число">
-            <button type="submit" id="button_form">Вычислить</button>
-          </form>
+<h1>Калькулятор-Площадь круга</h1>
+	<form action="${pageContext.request.contextPath}/Calc" method="post"> 
+	<label for="rad">Радиус:</label>
+	<input type="text" name="rad" id="rad" value="${first}">
+	<input type="submit" name="sign" value="Вычислить">
+	</form>
 </body>
 </html>
